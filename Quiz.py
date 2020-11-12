@@ -64,7 +64,7 @@ while(ch=='yes'):
     elif choice==2:
         headers=['Name','Number of Correct Answers','Number of Wrong Answers','Total Questions']
         df=pd.read_excel(r'data.xlsx',names=headers,header=None)
-        print(df)
+        print(tabulate(df,headers="keys",tablefmt="grid"))
     elif choice==3:
         sys.exit(0)
     
